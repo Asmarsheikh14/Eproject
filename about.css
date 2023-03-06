@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    font-family: 'Federo', sans-serif;
+}
+
+
+/* =================================Utility Classes=============================== */
+.raleway
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.poppin
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-bg
+{
+    background-image: url('Images/decoration-2.png');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.head 
+{
+    font-size: 52px;
+}
+
+.about-top-img
+{
+    background-image: url('Images/banner-2.jpg');
+   
+    background-size: cover;
+    background-position: 50%  50%;
+    min-height: 440px;
+    width: 100%;
+
+}
+.meet-img
+{
+    position: relative;
+   overflow: hidden;
+   /* transition: 0.5s; */
+}
+
+
+.overly
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.557); 
+    transition: 0.5s;
+}
+
+.meet-img:hover .overly
+{
+    opacity: 1;
+    
+}
+.meet-icon
+{
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+
+}
+.meet-icon:hover
+{
+    color: #ffa502;
+}
+

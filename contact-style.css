@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.raleway
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.contact-bg
+{
+    background-image: url('Images/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% , center;
+    min-height: 240px;
+    }
+
+
+
+.map{
+    width: 80%;
+}
+
+.contact-form-data h2
+{
+    border-bottom: 5px double rgb(163, 163, 163);
+    padding-bottom: 10px;
+}
+
+.outline input:focus,
+textarea:focus
+{
+    border: none;
+    outline: none;
+}
+
+.form-btn
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submit-btn
+{
+    
+    padding: 8px 30px;
+    outline: none;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.submit-btn:hover
+{
+    color: white;
+    background-color: #F992B5;
+    border: 2px solid #F992B5;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.icon-hover
+{
+    font-size: 42px;
+    transition: 0.3s;
+    padding: 20px 14px;
+    
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.icon-wrp:hover .icon-hover 
+{
+    background-color: #ffa502;
+    color: white;
+    border: none;
+    border: 2px solid #ffa502;
+
+}
+
+/* ===============================Media Qurey============================ */
+@media (max-width: 1400px) { 
+    .map{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .map{
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .map{
+        width: 100%;
+    }
+ }
+@media (max-width: 768px) { 
+    .map{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {  
+    .map{
+        width: 100%;
+    }
+}

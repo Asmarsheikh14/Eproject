@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let aptech =[
+            {
+                branch: "nazimabad",
+                labs: 25,
+                staff: 40,
+                labour: 10,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbduyvb0P9OVzfjWsCWnAczmsIq86mNycsINXd24_OC5VCaqOkne_cYYFO81xh5R2D2hk&usqp=CAU"
+            },
+            {
+                branch: "saleem center 11A",
+                labs: 25,
+                staff: 30,
+                labour: 10,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbduyvb0P9OVzfjWsCWnAczmsIq86mNycsINXd24_OC5VCaqOkne_cYYFO81xh5R2D2hk&usqp=CAU"
+            },
+            {
+                branch: "ii chunigar road",
+                labs: 25,
+                staff: 35,
+                labour: 10,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbduyvb0P9OVzfjWsCWnAczmsIq86mNycsINXd24_OC5VCaqOkne_cYYFO81xh5R2D2hk&usqp=CAU"
+            },
+            {
+                branch: "shahfaisal colony",
+                labs: 50,
+                staff: 80,
+                labour: 15,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbduyvb0P9OVzfjWsCWnAczmsIq86mNycsINXd24_OC5VCaqOkne_cYYFO81xh5R2D2hk&usqp=CAU"
+            },
+            {
+                branch: "federal B area",
+                labs: 20,
+                staff: 50,
+                labour: 2,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbduyvb0P9OVzfjWsCWnAczmsIq86mNycsINXd24_OC5VCaqOkne_cYYFO81xh5R2D2hk&usqp=CAU"
+            }
+        ]
+        for(let i in aptech){
+            document.write(
+                `<b> branches </b>: ${aptech[i].branch} <br>
+                <b> labs </b>: ${aptech[i].labs}<br>
+                <b> staff </b>: ${aptech[i].staff}<br>
+                <b> labour </b>: ${aptech[i].labour}<br>
+                <img src = '${aptech[i].img}' width = '300' height = '300'>
+                <br><hr>   `
+            )
+        }
+    </script>
+</body>
+</html>

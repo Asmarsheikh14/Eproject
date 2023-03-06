@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    font-family: 'Federo', sans-serif;
+}
+
+/* =================================Utility Classes=============================== */
+.raleway
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.poppin
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sorry-head-bg
+{
+    background-image: url('Images/imageedit_3_2250416578.png');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.head 
+{
+    font-size: 52px;
+}
+
+
+.sorry-crd-overly-bg
+{
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    
+    bottom:  0;
+    width: 0%;
+    height: 0%;
+    
+    clip-path: polygon(0 100%, 0 0, 100% 0);
+}
+
+.card:hover .sorry-crd-overly-bg
+{
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    
+    background-color: #b563ca ;
+    clip-path: polygon(0 100%, 0 0, 100% 0);
+    
+}
+
+
+
+
+.sorry-shado-2
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    width: 0;
+    height: 0;
+    /* clip-path: polygon(100% 100%, 71% 100%, 100% 82%); */
+    clip-path: polygon(100% 100%, 77% 100%, 100% 85%);
+}
+
+.card:hover .sorry-shado-2
+{
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    background-color: #b563ca ;
+    /* clip-path: polygon(100% 100%, 71% 100%, 100% 82%); */
+
+}
+
+.sorry-card-price span
+{
+    
+    font-weight: 700;
+    color: #b563ca   ;
+    font-size: 22px;
+
+}
+
+
+.mom-add-cart-btn
+{
+    text-decoration: none;
+    padding: 8px 30px ;
+    border: 2px solid #b563ca;
+    border-radius: 5px;
+    color: #b563ca  ;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.mom-add-cart-btn:hover
+{
+    background-color: #b563ca;
+    color: white;
+}
+
+
+.sorry-card-img img
+{
+    width: 55%;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+
+.card:hover .sorry-card-img img
+{
+    transform: translateY(-20px)  scale(1.1);
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: #f05e5c4e 0px 19px 38px, #f05e5c21 0px 15px 12px;
+}
+
+
+.sorry-card
+{
+    transition: 0.5s;
+}
+.sorry-card:hover
+{
+    box-shadow: #b563ca52 0px 4px 16px, #b563ca28 0px 8px 32px;
+}
+.sorry-card-img
+{
+    position: relative;
+}
+
+

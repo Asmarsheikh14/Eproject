@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    font-family: 'Federo', sans-serif;
+}
+
+body
+{
+    background-color: #FCFCFC;
+}
+/* =================================Utility Classes=============================== */
+.raleway
+{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.poppin
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-bg
+{
+    background-image: url('Images/decoration-2.png');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.head 
+{
+    font-size: 52px;
+}

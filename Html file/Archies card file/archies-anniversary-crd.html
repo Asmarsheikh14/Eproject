@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ==============================Bootstrap Icon=================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- ==============================Bootstrap CSS=================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ==============================Style Sheet=================== -->
+    <link rel="stylesheet" href="/contact-style.css">
+    <link rel="stylesheet" href="archies-card-style.css">
+    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="archies-anniversery-card-style.css">
+    <link rel="stylesheet" href="archies-birthday-card-style.css">
+    <link rel="stylesheet" href="archies-mom-day-crd-style.css">
+    <link rel="stylesheet" href="archies-wedding-crd-style.css">
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="/about.css">
+    <link rel="stylesheet" href="/contact-style.css">
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" >
+    
+</head>
+<body>
+
+  <header>
+    <!--======================== logo header====================== -->
+    <div class="top-bg">
+      <div class="container">
+
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4 text-lg-start text-center d-inline-block">
+            <div class="sub-navigation">
+              <ul class="d-inline-block p-0 m-0">
+                <li class="d-inline-block">
+                  <a class="sub-link text-decoration-none px-2 border-end border-2" href=""><i
+                      class="bi bi-telephone-fill"></i>Tel No: 3 045 224 48 00</a>
+                </li>
+                <li class="d-inline">
+                  <a class="sub-link px-2 text-decoration-none" href="">Currency in USD, $</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-lg-0 ">
+            <div class="top-logo d-flex justify-content-center">
+              <img  src="Images/logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 d-lg-block d-none">
+            <div class="socail-icon d-flex justify-content-end align-items-center ">
+
+              <button type="button" class="user-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fs-2 bi bi-person sub-link"></i></a>
+              
+              </button>
+              
+              <div class="mx-2">
+                <div class="col-md-3 d-flex justify-content-start">
+                  <div class=" pl-0 ps-0 pe-0 ">
+                    <i class="fs-4 bi bi-cart fs-2 ml-md-5"></i>
+                  </div>
+                  <span class="badge rounded-pill bg-danger mt-0 align-self-start" id="cart_item_count"
+                    style="margin-top: 25px !important; margin-left: 12px;">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======================== Add to cart div=================== -->
+    <div class="row pe-mg-5 d-flex justify-content-center justify-content-md-end bg-info">
+      <div class="col-md-6 col-lg-4 me-lg-5 border p-3 pb-4 rounded-5 bg-white ml-md-0" id="cart"
+        style="position: absolute; z-index: 1; top: 75px; overflow: auto;">
+        <div class="d-flex">
+          <div class="col-md-3 text-center">
+            <h5>
+              Product
+            </h5>
+          </div>
+          <div class="col-md-4 d-flex flex-wrap align-content-center justify-content-center">
+            <h5>Title</h5>
+          </div>
+          <div class="col-md-2 d-flex flex-wrap align-content-center justify-content-center">
+            <h5>Qty</h5>
+          </div>
+          <div class="col-md-2 d-flex flex-wrap align-content-center justify-content-center">
+            <h5>Price</h5>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div id="order" style="overflow: auto; height: 250px;">
+
+        </div>
+        <div id="cart-footer">
+          <div id="order-btn" class="text-center text-white w-100 bg-dark p-2 fw-bold "
+            style="letter-spacing: 1.5px;font-size: 20px;cursor: pointer;">
+            Order
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+    <!--======================== navbar =================-->
+    <nav class="navbar navbar-expand-lg navbar-light p-0   ">
+      <div class="container-fluid ">
+        <div class="socail-icon d-flex justify-content-end align-items-center d-lg-none">
+
+          <span class="mx-2"><a class="sub-link" href=""><i class="fs-2 bi bi-person"></i></a></span>
+          <span class="mx-2">
+            <div class="dropdown">
+              <a class="sub-link text-decoration-none px-2"><i class="fs-4 bi bi-cart"></i>
+                <span class="translate-middle badge rounded-pill">
+                  0
+                </span>
+              </a>
+
+              <div class="cart-content">
+                <div class="cart-pera">
+                  <p>No products in the cart.</p>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto menu-bar">
+
+            <li class="mx-auto"><a class="nav-link mx-4 active" aria-current="page" href="/index.html">HOME</a></li>
+            <li class="mx-auto"><a class="nav-link mx-4 " href="/about.html">ABOUT US</a></li>
+            <li class="nav-item dropdown dropdown-hover position-static mx-auto">
+              <a class="nav-link  mx-4 disabled" href="/brand.html" id="navbarDropdown" role="button"
+                data-mdb-toggle="dropdown" aria-expanded="false">
+                Brands <i class="bi bi-caret-down-fill"></i></a>
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu  dropdown-head" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                    border-top-right-radius: 0;">
+                <div class="container p-0">
+                  <div class="row ">
+                    <div class="col-md-12 col-lg-3 mb-3 mb-lg-0 w-100">
+                      <ul class="list-unstyled m-0 p-0 text-center">
+                        <li class="mb-2 product-items"><a class="" href="/Html file/Greeting island card file/greet-card.html">Greeting Island</a></li>
+                        <li class="mb-2 product-items"><a class="" href="archies-card.html">Archies </a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="mb-2 product-items"><a class="ps-1 pe-1" href="/brand.html">Something brand here</a></li>
+                      </ul>
+                    
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+            <!-- Left links -->
+            <li class="mx-auto"><a class="nav-link mx-4 " href="/contact-us.html">CONTACT US</a></li>
+          
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </nav>
+  </header>
+    
+    <div class="section Anniversary-cards">
+        <div class="container">
+          <div class="row mt-5 d-flex justify-content-between">
+            <div class="col-sm-6 col-12 d-flex align-items-center">
+                <h1><span class="head-bg">Anneversary</span> Cards</h1>
+            </div>
+            <div class="col-sm-6 col-12 d-flex justify-content-end">
+              <div class="search-box rounded-pill">
+                <input  id="myInput" placeholder="Search" type="text">
+                <i class="bi bi-search"></i>
+              </div>
+              
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row  my-row my-5">
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2"  class="card-img  ">
+    
+                <div class="Anniversary-crd-overly-bg"></div>
+                    <img src="Images/annversiry-crd-1.jpg" class="card-img-top " alt="...">
+                 
+                
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                    <a class="wish" href=""><i class="bi bi-heart"></i></a>
+                </div>
+    
+                <h5 class="card-title">Red poppies - Anniversary Invitation</h5>
+                  <div class="socail-icon mt-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                  </div>
+    
+                  <div class="card-price Anniversary-card-price">
+                    <span>$</span><span class=" raleway price">49.00</span>
+                  </div> 
+                  <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-2.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Geometric & Flowers - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">38.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class=" add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-3.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Indigo Watercolor - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">51.00</span>
+                </div>
+                <div class="pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            
+            <div class="card Anniversary-card h-100 text-center rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-4.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Autumnal Maple - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">42.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row  my-row my-5 pt-5">
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img">
+    
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-5.jpg" class="card-img-top " alt="...">
+
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                    <a class="wish" href=""><i class="bi bi-heart"></i></a>
+                </div>
+    
+                <h5 class="card-title">Cream Colorful Floral - Anniversary Invitation</h5>
+                  <div class="socail-icon mt-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                  </div>
+    
+                  <div class="card-price Anniversary-card-price">
+                    <span>$</span><span class=" raleway price">49.00</span>
+                  </div>
+                  <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-6.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Indigo Flowers - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">38.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2"  class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                
+                <img src="Images/annversiry-crd-7.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Marble frame - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">51.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            
+            <div class="card Anniversary-card h-100 text-center rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-8.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Wild Flowers - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">42.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+      </div>
+
+
+      <div class="container">
+        <div class="row  my-row my-5">
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img  ">
+    
+                <div class="Anniversary-crd-overly-bg"></div>
+                    <img src="Images/annversiry-crd-9.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                    <a class="wish" href=""><i class="bi bi-heart"></i></a>
+                </div>
+    
+                <h5 class="card-title">Transparent Flowers - Anniversary Invitation</h5>
+                  <div class="socail-icon mt-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                  </div>
+    
+                  <div class="card-price Anniversary-card-price">
+                    <span>$</span><span class=" raleway price">49.00</span>
+                  </div>
+                  <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2"  class="card-img">
+                <div class="Anniversary-crd-overly-bg"></div>
+                  
+                <img src="Images/annversiry-crd-10.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Swirls and Frames Purple - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">38.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-11.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Sparkling rustic floral - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">51.00</span>
+                </div>
+                <div class="pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            
+            <div class="card Anniversary-card h-100 text-center rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-12.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Moody Flower Wreath - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">42.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row  my-row my-5 pt-5">
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img">
+    
+                <div class="Anniversary-crd-overly-bg"></div>
+                    <img src="Images/annversiry-crd-13.jpg" class="card-img-top " alt="...">
+                  
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                    <a class="wish" href=""><i class="bi bi-heart"></i></a>
+                </div>
+    
+                <h5 class="card-title">Hydrangea - Anniversary Invitation</h5>
+                  <div class="socail-icon mt-auto">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                    <i class="bi bi-star-fill text-warning ms-1"></i>
+                  </div>
+    
+                  <div class="card-price Anniversary-card-price">
+                    <span>$</span><span class=" raleway price">49.00</span>
+                  </div> 
+                  <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-14.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Golden Flowers Frame - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">38.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            <div class="card Anniversary-card h-100 text-center  rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-15.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Cold Blush - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">51.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 my-lg-0 my-5">
+            
+            <div class="card Anniversary-card h-100 text-center rounded-3 border-0 ">
+              <div  data-bs-toggle="modal" data-bs-target="#exampleModal-2" class="card-img ">
+                <div class="Anniversary-crd-overly-bg"></div>
+                <img src="Images/annversiry-crd-16.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="Anniversary-shado-2">
+                  <a class="wish" href=""><i class="bi bi-heart"></i></a>
+              </div>
+                <h5 class="card-title">Burgundy Sunflower - Anniversary Invitation</h5>
+                <div class="socail-icon mt-auto">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                  <i class="bi bi-star-fill text-warning ms-1"></i>
+                </div>
+                <div class="card-price Anniversary-card-price">
+                  <span>$</span><span class=" raleway price">42.00</span>
+                </div>
+                <div class=" pt-3">
+                  <a href="#" class="add-cart-btn Anniversary-add-cart-btn d-inline"><span><i class="bi bi-cart"></i></span> Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+      </div>    
+   <!-- ==================================== footer ========================== -->
+   <footer class="footer">
+    <div class="container my-auto p-0">
+      <div class="row px-0 pt-5">
+        <div class="col-xl-4">
+          <h2 style="border-bottom: 3px solid #FFA502;" class=" d-inline-block pb-1">Cards Special</h2>
+          <p class="foter-pera">Sending Online Greeting Cards. Greeting cards can be used for almost all occasions,
+            only thing that you should.</p>
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 text-center">
+          <h3 style="border-bottom: 3px solid #FFA502;" class=" d-inline-block pb-1">Brands</h3>
+          <ul class="list-unstyled ">
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin"
+                href="/Html file/Greeting island card file/greet-card.html">Greeting Island</a></li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin"
+                href="/Html file/Archies card file/archies-card.html">Archies</a></li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin"
+                href="/Html file/Blue mountain card file/blue-mtn-card.html">Blue Mountain</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 text-center">
+          <h3 style="border-bottom: 3px solid #FFA502;" class=" d-inline-block pb-1">Pages</h3>
+          <ul class="list-unstyled ">
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin" href="/index.html">Home</a></li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin" href="/about.html">About Us</a></li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin" href="/contact-us.html">Contact Us</a>
+            </li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin" href="/brand.html">Brands Page</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 text-center">
+          <h3 style="border-bottom: 3px solid #FFA502;" class="d-inline-block pb-1">Made By</h3>
+          <ul class="list-unstyled ">
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin disabled" href="">Fahad Manzoor</a>
+            </li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin disabled" href="">Iftikhar Khan</a>
+            </li>
+            <li class="mb-1"><a class="text-decoration-none footer-color poppin disabled" href="">Waqas Ahmed</a></li>
+
+          </ul>
+        </div>
+        <div class="col-xl-2 col-md-12 col-sm-6 text-center">
+          <div class="footer-icon">
+            <span class="mx-2"><a class="text-white" href="https://www.facebook.com/login/"><i
+                  class="bi bi-facebook"></i></a></span>
+            <span class="mx-2"><a class="text-white"
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                  class="bi bi-twitter"></i></a></span>
+            <span class="mx-2"><a class="text-white" href="https://www.instagram.com/accounts/login/"><i
+                  class="bi bi-instagram"></i></a></span>
+            <span class="mx-2"><a class="text-white" href="https://www.youtube.com/watch?v=oPIOr1oK-gE"><i
+                  class="bi bi-youtube"></i></a></span>
+
+          </div>
+          <p class="foter-pera">Link from Social Account.</p>
+
+        </div>
+      </div>
+      <div>
+        <div class="col-12 text-center">
+          <div class="copy-right">
+            <p style="border-top: 3px solid #FFA502;" class="py-2 m-0 raleway fw-normal ">Copyright © Cards
+              Specialists 2023. All rights reserved. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--================================= logim popup================== -->
+  <div class="modal fade bg-transparent" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section class="login">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="login-wrp">
+
+                    <div class="login-content">
+                      <div class="login-img">
+                        <img src="Images/login.png" alt="">
+                      </div>
+                      <h2 class="text-center">Log In</h2>
+
+                      <form action="">
+                        <div class="name">
+                          <div class="login-icon">
+                            <i class="bi bi-person"></i>
+                          </div>
+                          <input placeholder="user name" class="w-100" type="text" required>
+                        </div>
+
+                        <div class="name mt-3">
+                          <div class="login-icon">
+                            <i class="bi bi-lock-fill"></i>
+                          </div>
+                          <input placeholder="Password" class="w-100" type="password" required>
+                        </div>
+
+                        <div class="login-btn">
+                          <button type="submit">Log In</button>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- =========================Card-popup========================= -->
+  <div class="modal fade bg-transparent mt-5" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content mt-5">
+        <div class="modal-header">
+          <h1>Product Details</h1>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="card-box">
+                <img src="" width="100%" height="280px" alt="" class="round">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card-content-box">
+                <h3 class="product-name"></h3>
+                <p class="product-desc raleway" style="box-sizing: border-box;">Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Tempore nulla dolore vero perferendis,</p>
+                <ul class="d-flex list-unstyled">
+                  <li class="ms-2"><i class="bi bi-star-fill text-warning"></i></li>
+                  <li class="ms-2"><i class="bi bi-star-fill text-warning"></i></li>
+                  <li class="ms-2"><i class="bi bi-star-fill text-warning"></i></li>
+                  <li class="ms-2"><i class="bi bi-star-fill text-warning"></i></li>
+                  <li class="ms-2"><i class="bi bi-star-fill text-warning"></i></li>
+
+                </ul>
+                <h4 class="product-price raleway mb-4"></h4>
+                <a href="" class="shop-btn poppin text-decoration-none download p-1"
+                  style="margin-bottom: 100px!important;">Free Download</a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ==============================Bootstrap JS=================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- ==============================JQurey=================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+</body>
+
+</html>
